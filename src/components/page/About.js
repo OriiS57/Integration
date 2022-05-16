@@ -3,8 +3,8 @@ import React from 'react';
 function About(){
     return (
         <React.Fragment>
-            <h1>Abuot</h1>
-            <p>This is ToDoList App v1.0</p>
+            <h1>About</h1>
+            <p>This is my react app for the exam "Integration Continue"</p>
         </React.Fragment>
     )
 }
