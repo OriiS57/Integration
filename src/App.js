@@ -15,9 +15,9 @@ class App extends Component {
     todos: []
   }
 
-  componentDidMount() {
-    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10') .then(res => this.setState({ todos: res.data}))
-  }
+  // componentDidMount() {
+  //   axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10') .then(res => this.setState({ todos: res.data}))
+  // }
 
   markComplete = (id) => {
     this.setState({ todos: this.state.todos.map(todo => {
@@ -35,11 +35,11 @@ class App extends Component {
     })
       .then(res => this.setState( { todos: [...this.state.todos, res.data]}))
   }
-  
+
   delTodo = (id) => {
     axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
     .then(res => this.setState({ todos: [...this.state.todos.filter(todo => todo.id !== id)]}));
-    
+
   }
 
   render() {
