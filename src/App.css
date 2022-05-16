@@ -14,10 +14,6 @@ a {
   text-decoration: none;
 }
 
-.container {
-  padding: 0 1rem;
-}
-
 .btn {
   display: inline-block;
   border: none;
@@ -29,4 +25,10 @@ a {
 
 .btn:hover {
   background: #666;
+}
+
+.tasks {
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 40px;
 }
